@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rob Weychert — Nava Take Home Exercise for Frontend Developers</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/ui-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Marketplace</h1>
+  </header> <!-- end .header -->
+
+  <main class="marketplace">
+
+    <section class="section section--household">
+
+      <h2 class="section__title">Your household</h2>
+      <p class="section__description">Welcome to The Marketplace! Review your household below:</p>
+
+      <div class="data" aria-live="polite" aria-relevant="additions text">
+
+        <div class="datum" id="bud-baxter">
+          <h3 class="datum__title">Bud Baxter</h3>
+          <ul class="datum__description">
+            <li class="datum__pair">
+              <span class="datum__key">Description:</span>
+              <span class="datum__value">Household contact</span>
+            </li>
+            <li class="datum__pair">
+              <span class="datum__key">Favorite fruit:</span>
+              <span class="datum__value">Apple</span>
+            </li>
+          </ul>
+        </div> <!-- end .datum#bud-baxter -->
+
+        <div class="datum" id="andy-baxter">
+          <h3 class="datum__title">Andy Baxter</h3>
+          <ul class="datum__description">
+            <li class="datum__pair">
+              <span class="datum__key">Description:</span>
+              <span class="datum__value">Household contact</span>
+            </li>
+            <li class="datum__pair">
+              <span class="datum__key">Favorite fruit:</span>
+              <span class="datum__value">Apple</span>
+            </li>
+          </ul>
+        </div> <!-- end .datum#andy-baxter -->
+
+      </div> <!-- end .data -->
+
+      <p class="section__alert alert" id="enable-js"><em>Please <a href="https://www.wikihow.com/Enable-JavaScript" target="_blank">enable JavaScript</a> to add new household members.</em></p>
+
+    </section> <!-- end .section -->
+
+  </main> <!-- end .marketplace -->
+
+</body>
+
+</html>
