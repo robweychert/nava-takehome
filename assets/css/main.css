@@ -213,14 +213,14 @@ MAIN SECTION
 	line-height: var(--lh-1);
 	padding: var(--space-1) var(--space0);
 	transition: background 0.2s;
+	&:focus-visible {
+		background: var(--colorBrand60);
+	}
 	&.btn--cancel {
 		background: var(--colorAlert50);
 		&:focus-visible {
 			background: var(--colorAlert60);
 		}
-	}
-	&:focus-visible {
-		background: var(--colorBrand60);
 	}
 }
 @media (hover: hover) {

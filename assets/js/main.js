@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modal.removeAttribute('aria-hidden');
 			modal.classList.remove('modal--closed');
 			modal.classList.add('modal--open');
+			inputs[0].focus();
 		}
 		document.getElementById('btn--add').toggleAttribute('disabled');
 	}
@@ -164,9 +165,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	jsonToHtml(section,addNewMemberModal);
 	const modal = document.getElementById('modal--data');
 	const inputs = modal.querySelectorAll(".add-datum__input");
-
-	// Give focus to the modal's first input
-	modal.querySelector('.add-datum__input').focus();
 
 	// Add modal functionality to the cancel button
 	document.querySelector('.btn--cancel').addEventListener('click', function(e) {
